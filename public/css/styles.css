@@ -59,10 +59,18 @@ header form{
     padding-bottom: 10px;
     color: #39b54a;
     margin: 5px;
+    opacity: 0;
+}
+.descripciones:hover{
+    opacity: 1;
 }
 .camion{
     color: #39b54a;
     margin: 5px;
+
+}
+.camion:hover{
+    transform: rotateY(90deg);
 }
 .icono{
     font-size: 2em;
@@ -126,13 +134,15 @@ footer{
 
 }
 @media (min-width: 769px){
-    *{
+    img:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .hamburguesa{
         display: none;
     }
-    
+    .descripciones{
+        display: initial;
+    }
     ul{
         display: initial;
         display: flex;
@@ -159,4 +169,22 @@ footer{
         width: 20%;
         margin: 5px;
     }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer div{
+        margin: 15px;
+    }
+    .derechos{
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/* LOGIN */
+#enviar:hover{
+    background-color: #0022AA;
 }
