@@ -1,9 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    
+
 }
 header{
-    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+p{
+    font-size: 12px;
+}
+header form{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.titulares{
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+.precios{
+    font-size: 18px;
+    margin: 5px;
+}
+
+.main{
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+
+    margin-bottom: 10px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    margin: 5px;
+}
+.descripciones{
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #39b54a;
+    margin: 5px;
+}
+.camion{
+    color: #39b54a;
+    margin: 5px;
+}
+.icono{
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 footer{
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+.hamburguesa{
+    text-align: center;
+    background-color: #03264C;
+    align-items: center;
+    color: white;  
+    width: 10%;
+    margin: auto;
+}
+
+/* .product-desc-box > .camion{
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+} */
+
+.product-desc-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+@media (min-width: 361px){
+    .descripciones{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+    article{
+        display: flex;        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main{
+        width: 45%;
+        margin: 5px;
+    }
+    .hamburguesa{
+        display: none;
+    }
+
+}
+@media (min-width: 769px){
+    *{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .hamburguesa{
+        display: none;
+    }
+    
+    ul{
+        display: initial;
+        display: flex;
+    }
+    header img{
+        width: 30%;
+    }
+    header form{
+        width: 30%;
+    }
+    header p {
+        width: 30%;
+    }
+    li{
+        margin: 10px;
+    }
+    article{
+        display: flex;        
+        flex-direction: col;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main{
+        width: 20%;
+        margin: 5px;
+    }
 }
