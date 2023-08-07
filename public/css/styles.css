@@ -67,14 +67,39 @@ header form{
 .camion{
     color: #39b54a;
     margin: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 
 }
 .camion:hover{
-    transform: rotateY(90deg);
+    animation-name: girarb;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+    animation-direction: alternate;
+}
+
+@keyframes girarb{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(-90deg);
+    }
 }
 .icono{
     font-size: 2em;
     margin-bottom: 10px;
+    
 }
 footer{
     text-align: center;
