@@ -184,7 +184,45 @@ footer{
     }
 }
 
+/* Registro */
+
+.registro{
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+.registro p{
+    width: 80%;
+    margin: auto;
+
+    font-size: 12px;
+    background-color: #39b54a;
+    color: white;
+    text-align: center;
+}
+.botones{
+    text-align: center;
+}
+
 /* LOGIN */
 #enviar:hover{
     background-color: #0022AA;
+}
+#borrar:hover{
+    background-color: red;
+}
+.ingresar{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+.ingresar p{
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    background-color: #39b54a;
+    color: white;
+    text-align: center;
 }

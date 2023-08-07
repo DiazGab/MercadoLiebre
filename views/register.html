@@ -41,40 +41,66 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-    <form method="get" action="/">
-        <label for="nombre">Ingrese nombre y apellido</label>
-        <input type="text" name="nombre" id="nombre">
+    <form method="get" action="/" class="registro">
+        <p><label for="nombre">Ingrese nombre y apellido</label>
+        <input type="text" name="nombre" id="nombre"></p>
         <br>
-        <label for="usuario">Nombre de usuario</label>
-        <input type="text" name="usuario" id="usuario">
+        <p><label for="usuario">Nombre de usuario</label>
+        <input type="text" name="usuario" id="usuario"></p>
         <br>
-        <label for="fenac">Fecha de nacimiento</label>
-        <input type="date" name="fecha" id="fecha">
+        <p><label for="fenac">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha"></p>
         <br>
-        <input type="text" name="domicilio" id="domicilio">
+        <p><label for="domicilio">Ingrese su domicilio</label>
+        <input type="text" name="domicilio" id="domicilio"></p>
         <br>
-        <label for="perfil">Perfil de usuario</label>
-        <p><input type="radio" name="perfil" value="comprar">Comprar</p>
+        
+        <p><label for="perfil">Perfil de usuario</label><br><input type="radio" name="perfil" value="comprar">Comprar</p>
         <p><input type="radio" name="perfil" value="vender">Vender</p>
         <br>
-        <label for="categoria">Intereses</label>
+        <p><label for="categoria">Intereses</label></p>
         <p><input type="checkbox" name="perfil" value="Electro">Electro</p>
         <p><input type="checkbox" name="perfil" value="Moda">Moda</p>
         <p><input type="checkbox" name="perfil" value="Hogar">Hogar</p>
         <p><input type="checkbox" name="perfil" value="Jugueteria">Jugueteria</p>
         <p><input type="checkbox" name="perfil" value="Vida sana">Vida Sana</p>
         <br>
-        <label for="foto">Foto de usuario</label>
-        <input type="file" name="foto" id="foto">
+        <p><label for="foto">Foto de usuario</label>
+        <input type="file" name="foto" id="foto"></p>
         <br>
-        <label for="contraseña">Ingrese contraseña</label>
-        <input type="password" name="contraseña" id="contraseña">
+        <p><label for="contraseña">Ingrese contraseña</label>
+        <input type="password" name="contraseña" id="contraseña"></p>
         <br>
-        <label for="confirmar">Confirmar contraseña</label>
-        <input type="password" name="confirmacion" id="confirmacion">
+        <p><label for="confirmar">Confirmar contraseña</label>
+        <input type="password" name="confirmacion" id="confirmacion"></p>
         <br>
-        <input type="submit" name="enviar" id="enviar" value="enviar">
-        <input type="reset" value="borrar">
+        <p class="botones"><input type="submit" name="enviar" id="enviar" value="enviar">
+        <input type="reset" value="borrar" id="borrar"></p>
     </form>
+
+    <footer>
+        <div>
+            <i class="fas fa-credit-card icono"></i>
+            <br>
+            <b>Pagá con tarjeta o en efectivo</b>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+
+        <div>
+            <i class="fas fa-gift icono"></i>
+            <br>
+            <b>Envío gratis desde $ 2.500</b>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+
+        <div>
+            <i class="fas fa-user-shield icono"></i>
+            <br>
+            <b>Seguridad, de principio a fin</b>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+            </p>
+        </div>
+
+    </footer>
 </body>
 </html>
